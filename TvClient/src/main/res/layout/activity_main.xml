@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imgScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#CC222222">
+
+        <LinearLayout
+            android:id="@+id/inputPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            
+            <EditText
+                android:id="@+id/etIp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="IP"
+                android:text="192.168."
+                android:textColor="#FFF"
+                android:textColorHint="#888" />
+
+            <EditText
+                android:id="@+id/etPin"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="PIN"
+                android:inputType="number"
+                android:textColor="#FFF"
+                android:textColorHint="#888"
+                android:maxLength="4"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/btnToggleMenu"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="#444"
+            android:gravity="center"
+            android:text="▲"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</FrameLayout>
